@@ -23,31 +23,31 @@ func success(msg string, data interface{}, meta *meta.Meta, code int) Response {
 	}
 }
 
-func OK(msg string, data interface{}, meta *meta.Meta, code int) Response {
+func OK(msg string, data interface{}, meta *meta.Meta) Response {
 	return success(msg, data, meta, http.StatusOK)
 }
 
-func Created(msg string, data interface{}, meta *meta.Meta, code int) Response {
+func Created(msg string, data interface{}, meta *meta.Meta) Response {
 	return success(msg, data, meta, http.StatusCreated)
 }
 
-func Accepted(msg string, data interface{}, meta *meta.Meta, code int) Response {
+func Accepted(msg string, data interface{}, meta *meta.Meta) Response {
 	return success(msg, data, meta, http.StatusAccepted)
 }
 
-func NotAuthoritiveInfo(msg string, data interface{}, meta *meta.Meta, code int) Response {
+func NotAuthoritiveInfo(msg string, data interface{}, meta *meta.Meta) Response {
 	return success(msg, data, meta, http.StatusNonAuthoritativeInfo)
 }
 
-func NoContent(msg string, data interface{}, meta *meta.Meta, code int) Response {
+func NoContent(msg string, data interface{}, meta *meta.Meta) Response {
 	return success(msg, data, meta, http.StatusNoContent)
 }
 
-func ResetContent(msg string, data interface{}, meta *meta.Meta, code int) Response {
+func ResetContent(msg string, data interface{}, meta *meta.Meta) Response {
 	return success(msg, data, meta, http.StatusResetContent)
 }
 
-func PartialContent(msg string, data interface{}, meta *meta.Meta, code int) Response {
+func PartialContent(msg string, data interface{}, meta *meta.Meta) Response {
 	return success(msg, data, meta, http.StatusPartialContent)
 }
 
